@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Pastel de Bodas Elegante",
+            "category": "bodas",
+            "price": {
+                "small": 120,
+                "medium": 200,
+                "large": 350
+            },
+            "description": "Pastel elegante para bodas con diseño personalizable",
+            "ingredients": ["harina orgánica", "chocolate belga", "frutas frescas"],
+            "allergens": ["gluten", "lacteos"],
+            "tags": ["bodas", "elegante", "personalizable"],
+            "image": "/images/products/wedding-cake.jpg"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+/* css/responsive.css */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .about-content, .contact-content {
+        flex-direction: column;
+    }
+    
+    .recommendation-card {
+        width: calc(50% - 20px);
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    .recommendation-card {
+        width: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .chat-input {
+        flex-direction: column;
+    }
+    
+    .chat-input button {
+        margin-top: 10px;
+        padding: 12px;
+    }
+}
