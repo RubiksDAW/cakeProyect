@@ -116,7 +116,7 @@ header {
 
 /* Secciones */
 section {
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 .section-title {
@@ -411,4 +411,83 @@ footer {
 
 #productos {
     padding-top: 20px;     /* Reduce el padding superior de Productos */
+}
+
+/* Estilos para el mapa completo con información */
+.contact-map-full {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.map-info-enhanced {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.contact-info-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info-item .contact-icon {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.1rem;
+}
+
+.contact-details h3 {
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.contact-details p {
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.map-additional-info {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px solid var(--primary-color);
+}
+
+.map-additional-info p {
+    margin-bottom: 10px;
 }

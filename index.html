@@ -131,115 +131,71 @@
         </div>
     </section>
 
-    <!-- Asistente Virtual con IA -->
-    <section id="asistente">
-        <div class="container">
-            <div class="section-title">
-                <h2>Asistente Virtual</h2>
-                <p>Nuestro asistente con IA está aquí para ayudarte a encontrar el pastel perfecto para tu ocasión especial.</p>
-            </div>
-            <div class="ai-assistant">
-                <div class="chat-container" id="chat-container">
-                    <div class="message bot-message">
-                        ¡Hola! Soy tu asistente virtual de Delicias Dulces. ¿En qué puedo ayudarte hoy? Puedo recomendarte pasteles según tu evento, presupuesto o preferencias.
-                    </div>
-                </div>
-                <div class="chat-input">
-                    <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí...">
-                    <button id="send-btn">Enviar</button>
-                </div>
-            </div>
-            
-            <!-- Recomendaciones generadas por IA -->
-            <div class="section-title" style="margin-top: 60px;">
-                <h2>Recomendaciones para Ti</h2>
-                <p>Basado en tendencias y preferencias populares, te sugerimos estos productos:</p>
-            </div>
-            <div class="recommendations">
-                <div class="recommendation-card">
-                    <h3>Pastel de Red Velvet</h3>
-                    <p>Uno de nuestros más populares. Suave, con un distintivo color rojo y un sabor único.</p>
-                </div>
-                <div class="recommendation-card">
-                    <h3>Tarta de Limón Merengue</h3>
-                    <p>Perfecta combinación de acidez y dulzura. Ideal para los amantes de los sabores frescos.</p>
-                </div>
-                <div class="recommendation-card">
-                    <h3>Selección de Mini Postres</h3>
-                    <p>Prueba una variedad de nuestros postres en formato pequeño. Perfecto para compartir.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contacto -->
     <section id="contacto">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contáctanos</h2>
-                <p>Estamos aquí para ayudarte a hacer tu evento especial aún más dulce.</p>
+    <div class="container">
+        <div class="section-title">
+            <h2>Contáctanos</h2>
+            <p>Estamos aquí para ayudarte a hacer tu evento especial aún más dulce.</p>
+        </div>
+        
+        <div class="contact-map-full">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2512.7995324809212!2d-5.942587701244945!3d37.486005327409394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1269d35581b8e7%3A0x6cbd38d9d51453d9!2s41300%20San%20Jos%C3%A9%20de%20la%20Rinconada%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1761739084496!5m2!1ses!2ses" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h3>Dirección</h3>
-                            <p>Calle Dulce 123, Sector Repostería<br>Ciudad Delicia, CP 12345</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
+            
+            <div class="map-info-enhanced">
+                <div class="contact-info-grid">
+                    <!-- Información de Teléfono -->
+                    <div class="contact-info-item">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
                         </div>
-                        <div>
+                        <div class="contact-details">
                             <h3>Teléfono</h3>
-                            <p>+34 912 345 678</p>
+                            <p>+34 612 345 678</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h3>Email</h3>
-                            <p>info@deliciasdulces.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
+                    <!-- Información de Horario -->
+                    <div class="contact-info-item">
                         <div class="contact-icon">
                             <i class="fas fa-clock"></i>
                         </div>
-                        <div>
+                        <div class="contact-details">
                             <h3>Horario</h3>
-                            <p>Lunes a Viernes: 8:00 - 20:00<br>Sábados: 9:00 - 18:00<br>Domingos: 10:00 - 14:00</p>
+                            <p>Lun-Vie: 8:00 - 20:00<br>
+                               Sáb: 9:00 - 18:00<br>
+                               Dom: 10:00 - 14:00</p>
                         </div>
                     </div>
+                    <!-- Información de Email -->
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@deliciascristobal.com</p>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Teléfono</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Enviar Mensaje</button>
-                    </form>
+                
+                <div class="map-additional-info">
+                    <p><strong>📍 Encuéntranos fácilmente</strong></p>
+                    <p>Estamos ubicados en San José de la Rinconada, con fácil acceso y parking cercano. ¡Te esperamos!</p>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
